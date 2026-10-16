@@ -38,7 +38,7 @@ func DefaultPath() string {
 	if err != nil || dir == "" {
 		dir = os.TempDir()
 	}
-	return filepath.Join(dir, "cloak", "progress.json")
+	return filepath.Join(dir, "decoy", "progress.json")
 }
 
 // NewEmpty returns an in-memory store that persists to path on Save.

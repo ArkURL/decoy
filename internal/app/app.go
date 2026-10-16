@@ -7,11 +7,11 @@ import (
 
 	tea "charm.land/bubbletea/v2"
 
-	"github.com/arkurl/cloak/internal/boss"
-	"github.com/arkurl/cloak/internal/config"
-	"github.com/arkurl/cloak/internal/epub"
-	"github.com/arkurl/cloak/internal/reader"
-	"github.com/arkurl/cloak/internal/storage"
+	"github.com/arkurl/decoy/internal/boss"
+	"github.com/arkurl/decoy/internal/config"
+	"github.com/arkurl/decoy/internal/epub"
+	"github.com/arkurl/decoy/internal/reader"
+	"github.com/arkurl/decoy/internal/storage"
 )
 
 type mode int
@@ -301,13 +301,13 @@ func (m Model) View() tea.View {
 	switch {
 	case m.showHelp:
 		content = m.helpView()
-		title = "cloak · help"
+		title = "decoy · help"
 	case m.mode == modeBoss:
 		content = m.boss.View()
 		title = m.cfg.FakeTitle
 	default:
 		content = m.reader.View()
-		title = "cloak · " + m.book.Title
+		title = "decoy · " + m.book.Title
 	}
 	v := tea.NewView(content)
 	v.AltScreen = true
@@ -317,7 +317,7 @@ func (m Model) View() tea.View {
 
 func (m Model) helpView() string {
 	lines := []string{
-		"cloak — 快捷键",
+		"decoy — 快捷键",
 		"",
 		"  j / k, ↑ / ↓     上一行 / 下一行",
 		"  n / space        下一页        p / pgup        上一页",

@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/arkurl/cloak/internal/epub"
+	"github.com/arkurl/decoy/internal/epub"
 )
 
 func TestWrap(t *testing.T) {

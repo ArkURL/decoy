@@ -1,6 +1,6 @@
 package render
 
-import "github.com/arkurl/cloak/internal/epub"
+import "github.com/arkurl/decoy/internal/epub"
 
 // CountLines returns how many screen lines the paragraphs occupy at width. It
 // matches Build's line count but avoids allocating the lines.

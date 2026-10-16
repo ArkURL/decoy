@@ -4,7 +4,7 @@ import (
 	"testing"
 	"unicode/utf8"
 
-	"github.com/arkurl/cloak/internal/render"
+	"github.com/arkurl/decoy/internal/render"
 )
 
 func TestTruncateRuneSafe(t *testing.T) {

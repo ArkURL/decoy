@@ -8,7 +8,7 @@ import (
 	"charm.land/lipgloss/v2"
 	"github.com/charmbracelet/x/ansi"
 
-	"github.com/arkurl/cloak/internal/render"
+	"github.com/arkurl/decoy/internal/render"
 )
 
 // replyMsg is delivered after the fake "thinking" delay.

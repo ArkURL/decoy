@@ -28,7 +28,7 @@ func Path() string {
 	if err != nil || dir == "" {
 		return ""
 	}
-	return filepath.Join(dir, "cloak", "config.json")
+	return filepath.Join(dir, "decoy", "config.json")
 }
 
 // Load reads the config file, falling back to defaults for missing values.

@@ -1,4 +1,6 @@
-# Build output
+# Build output (cloak* kept while the checkout directory is still named cloak)
+/decoy
+/decoy.exe
 /cloak
 /cloak.exe
 *.exe

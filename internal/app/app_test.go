@@ -9,9 +9,9 @@ import (
 
 	tea "charm.land/bubbletea/v2"
 
-	"github.com/arkurl/cloak/internal/config"
-	"github.com/arkurl/cloak/internal/epub"
-	"github.com/arkurl/cloak/internal/storage"
+	"github.com/arkurl/decoy/internal/config"
+	"github.com/arkurl/decoy/internal/epub"
+	"github.com/arkurl/decoy/internal/storage"
 )
 
 func testBook(t *testing.T) *epub.Book {

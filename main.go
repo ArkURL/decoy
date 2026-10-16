@@ -1,4 +1,4 @@
-// Command cloak is a terminal EPUB reader with a boss key.
+// Command decoy is a terminal EPUB reader with a boss key.
 package main
 
 import (
@@ -8,15 +8,15 @@ import (
 
 	tea "charm.land/bubbletea/v2"
 
-	"github.com/arkurl/cloak/internal/app"
-	"github.com/arkurl/cloak/internal/config"
-	"github.com/arkurl/cloak/internal/epub"
-	"github.com/arkurl/cloak/internal/storage"
+	"github.com/arkurl/decoy/internal/app"
+	"github.com/arkurl/decoy/internal/config"
+	"github.com/arkurl/decoy/internal/epub"
+	"github.com/arkurl/decoy/internal/storage"
 )
 
 func main() {
 	flag.Usage = func() {
-		fmt.Fprintln(os.Stderr, "用法: cloak <book.epub>")
+		fmt.Fprintln(os.Stderr, "用法: decoy <book.epub>")
 		fmt.Fprintln(os.Stderr, "  摸鱼：按 b 切到伪装界面，再按 b 或 ctrl+b 切回。")
 	}
 	flag.Parse()

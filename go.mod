@@ -1,4 +1,4 @@
-module github.com/arkurl/cloak
+module github.com/arkurl/decoy
 
 go 1.27.1
 
