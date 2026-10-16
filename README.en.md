@@ -22,31 +22,13 @@
 - **Boss key** — `b` toggles a fake Claude Code screen (English text, a new line every 3 seconds, a working input box with fake replies); the **terminal window title is disguised too**, and it auto-triggers after 30 seconds idle.
 - **Configurable** — `idleSeconds`, the fake title, and key bindings can all be overridden.
 
-## Preview
+## Demo
 
-Reading view:
+![decoy demo](demo/demo.gif)
 
-```
- Chapter 1: Firm Foundations and Castles in the Air      12/474   3%
-  The castle-in-the-air theory focuses on the psychology of
-  investors: they buy because they expect to sell higher.
- j/k scroll · n/space next · p prev · J/K chapter · t toc · b boss · ? help · q quit
-```
-
-Boss key (disguised as Claude Code):
-
-```
- ✻ Claude Code   ~/dev/acme-api   main
- ────────────────────────────────────────────────────────
- > refactor parseConfig to wrap errors and add a test
- I'll look at the config parsing first, then wrap the errors.
- ⏺ Read  internal/config/config.go
-   ⎿ read 84 lines
- ⏺ Edit  internal/config/config.go
-   ⎿ Applied 2 edits  +6 -1
-❯ █   i to type · ⌃b to exit
-  ? for shortcuts   ·   / for commands   ·   ⏵⏵ accept edits on
-```
+> Demo book: 西遊記 (public domain, from Chinese Wikisource). Re-record with
+> `brew install vhs ttyd ffmpeg` → `./demo/fetch.sh` → `go build -o decoy .` →
+> `vhs demo/demo.tape` (script: [`demo/demo.tape`](demo/demo.tape)).
 
 ## Install
 

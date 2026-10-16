@@ -22,31 +22,11 @@
 - **boss 键**：`b` 一键切换伪装界面；内容为英文、每 3 秒自动追加一行、可输入并得到伪回复；**终端标题也会一起伪装**；闲置 30 秒自动触发。
 - **可配置**：`idleSeconds`、伪装标题、按键绑定都能通过配置文件覆盖。
 
-## 界面预览
+## 演示
 
-阅读界面：
+![decoy 演示](demo/demo.gif)
 
-```
- 第1章 坚实基础与空中楼阁                    12/474   3%
-  空中楼阁理论强调的是心理因素：投资者之所以买入，是因为
-  他相信有人会以更高的价格接盘。
- j/k 滚动 · n/space 下页 · p 上页 · J/K 章节 · t 目录 · b 摸鱼 · ? 帮助 · q 退出
-```
-
-boss 键（伪装成 Claude Code）：
-
-```
- ✻ Claude Code   ~/dev/acme-api   main
- ────────────────────────────────────────────────────────
- > refactor parseConfig to wrap errors and add a test
- I'll look at the config parsing first, then wrap the errors.
- ⏺ Read  internal/config/config.go
-   ⎿ read 84 lines
- ⏺ Edit  internal/config/config.go
-   ⎿ Applied 2 edits  +6 -1
-❯ █   i to type · ⌃b to exit
-  ? for shortcuts   ·   / for commands   ·   ⏵⏵ accept edits on
-```
+> 演示用书：《西遊記》（公版，取自中文维基文库）。重新录制：`brew install vhs ttyd ffmpeg` → `./demo/fetch.sh` → `go build -o decoy .` → `vhs demo/demo.tape`；脚本见 [`demo/demo.tape`](demo/demo.tape)。
 
 ## 安装
 
