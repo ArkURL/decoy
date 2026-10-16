@@ -1,0 +1,30 @@
+# Build output
+/cloak
+/cloak.exe
+*.exe
+*.test
+*.out
+/dist/
+
+# Test books and other large assets (keep the repo small)
+*.epub
+*.mobi
+*.azw3
+
+# Coverage / profiling
+*.prof
+coverage.txt
+
+# Editor and OS cruft
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local environment
+.env
+.env.local
+
+# Go workspace files
+go.work
+go.work.sum
